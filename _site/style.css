@@ -1,0 +1,99 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /*Font Size*/
+  --font-large: 35px;
+  --font-medium: 24px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 5;
+  padding: 5;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  margin: 20px;
+  padding: 20px;
+  font-size: var(--font-large);
+  color: rgb(5, 163, 184);
+  font-weight: 800;
+}
+
+header .logo a {
+  color: rgb(5, 163, 184);
+}
+
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.sideToggleBtn::before {
+  content: ">";
+  color: rgb(5, 163, 184);
+  display: inline-block;
+  width: 50px;
+  line-height: 50px;
+  font-size: var(--font-large);
+  text-align: center;
+  border-right: 1px solid #ffffff;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.sideButton:checked + .sideToggleBtn::before {
+  content: "<";
+}
+
+.sideButton:checked ~ .sideList {
+  right: 0;
+}
+
+.sideList {
+  position: absolute;
+  right: -200px;
+  top: 100px;
+  bottom: 0;
+  border-right: 1px solid rgb(5, 163, 184);
+  width: 200px;
+  font-size: var(--font-medium);
+  transition: 0.3s ease-in;
+}
+
+.sideLink {
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid rgb(5, 163, 184);
+  color: rgb(5, 163, 184);
+  text-decoration: none;
+}
