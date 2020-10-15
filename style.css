@@ -171,3 +171,7 @@ header .logo a {
   justify-content: center;
   width: 100%;
 }
+
+.container .images img {
+  width: 51%;
+}
