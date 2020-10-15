@@ -167,7 +167,7 @@ header .logo a {
   font-size: var(--font-medium);
   font-style: var(--white-color);
   position: fixed;
-  top: 10%;
+  top: 20%;
   justify-content: center;
   width: 100%;
 }
