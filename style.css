@@ -18,7 +18,7 @@
   --font-micro: 10px;
 
   /* color */
-  --secondary-color: rgb(5, 163, 184);
+  --secondary-color: #c4dee2;
   --contrast-color: #aadde6;
 }
 
@@ -105,7 +105,7 @@ header .logo a {
 .container {
   display: flex;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #fff;
   animation: expand 0.8s ease forwards;
@@ -154,23 +154,21 @@ header .logo a {
 }
 
 .container .profile img {
-  position: fixed;
-  top: 300px;
-  left: 630px;
-  width: 150px;
+  width: 20%;
+  margin: 25% 40%;
   border: 3px solid white;
   border-radius: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .container .info {
   display: flex;
   text-align: center;
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   font-style: var(--white-color);
   position: fixed;
-  padding: 20px;
-  top: 120px;
-  left: 400px;
+  top: 10%;
+  justify-content: center;
+  width: 100%;
 }
