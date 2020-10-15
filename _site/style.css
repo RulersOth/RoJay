@@ -38,11 +38,6 @@ ul {
   list-style: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 header .logo {
   margin: 20px;
   padding: 20px;
@@ -107,17 +102,6 @@ header .logo a {
   text-decoration: none;
 }
 
-.bgColor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: -10;
-  background-color: var(--contrast-color);
-}
-
 .container {
   display: flex;
   height: 100vh;
@@ -129,6 +113,17 @@ header .logo a {
   position: relative;
   transition: all 0.8s ease;
   grid-template-columns: 3fr 1fr;
+}
+
+.bgColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
 }
 
 @keyframes slideIn {
