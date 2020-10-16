@@ -173,5 +173,6 @@ header .logo a {
 }
 
 .container .images img {
-  width: 51%;
+  width: 45%;
+  height: 10%;
 }
