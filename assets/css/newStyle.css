@@ -135,7 +135,7 @@ body {
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .left-layer.active {
-  left: 100%;
+  left: -100%;
 }
 .left-layer--2 {
   background: #d3d4d8;

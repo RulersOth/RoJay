@@ -7,7 +7,7 @@ for (const button of buttons) {
      var layerClass = "." + id+ "-layer";
      var layers = document.querySelectorAll(layerClass);
      for (const layer of layers) {
-       layer.classList.toggle("active");
+       layer.classList.toggle("pull");
      }
   });
 }
