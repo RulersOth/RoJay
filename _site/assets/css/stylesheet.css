@@ -1,0 +1,150 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /*Font Size*/
+  --font-large: 35px;
+  --font-medium: 24px;
+  --font-small: 12px;
+  --font-micro: 10px;
+
+  /* color */
+  --secondary-color: #89c3cc;
+  --contrast-color: #7dbdc9;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black-color);
+}
+
+.logo {
+  font-size: 60px;
+  color: var(--white-color);
+  font-weight: 800;
+  z-index: 1;
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin: 100px auto;
+  margin-top: 25%;
+  font-stretch: extra-expanded;
+}
+
+.logo a {
+  color: var(--white-color);
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  text-decoration: overline;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  z-index: -1;
+}
+
+.fa-chevron-down,
+.fa-chevron-up,
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #ffdd43;
+  font-size: 30px;
+}
+
+.buttons button {
+  border: none;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: rgba(41, 48, 151, 0.04);
+}
+.buttons #top {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-top: 1%;
+}
+.buttons #top a {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 20px;
+  right: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffdd43;
+}
+.buttons #bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 20px;
+  margin-bottom: 1%;
+}
+.buttons #bottom a {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  bottom: 35px;
+  right: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffdd43;
+}
+
+.top-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  background: var(--white-color);
+  -webkit-transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+  transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+.top-layer.pull {
+  top: 100%;
+}
+.bottom-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  background: #ffdd43;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.bottom-layer.pull {
+  top: -100%;
+}
