@@ -89,16 +89,16 @@ ul li a {
   .container_m {
     position: absolute;
     top: 25%;
-    left: 10%;
-    width: 400px;
-    height: 500px;
+    left: 15%;
+    width: 350px;
+    height: 420px;
     border: 1px solid #ffdd43;
   }
 
   .container_m .info_m .myDad_m {
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 20%;
     color: var(--white-color);
     text-align: center;
     font-size: 20px;
@@ -108,7 +108,7 @@ ul li a {
     display: block;
     position: absolute;
     top: 80%;
-    left: 32%;
+    left: 30%;
     border: 1px solid #ffdd43;
     background-color: var(--black-color);
     color: #ffdd43;
