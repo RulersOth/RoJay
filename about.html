@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/nStyle.css">
-    <title>RoJay_TechBlog</title>
+    <link rel="stylesheet" href="./assets/css/pageStyle.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About_Jay</title>
     <script 
     src="https://kit.fontawesome.com/2d323a629b.js"
     crossorigin="anonymous"
@@ -13,32 +14,29 @@
 </head>
 <body>
     <header>
-        <div class=logo>
-            <i class="fas fa-rocket"></i>
-            <span class="title"><a href="./index.html">RoJay</a></span>
+        <nav>
+            <div class="toggle"><div class="menu"><i class="fas fa-bars" aria-hidden="true"></i></div>
+            </div>        
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <div class="sLogo"> 
+                <i class="fas fa-rocket"></i>
+                <span class="title"><a href="./index.html">RoJay</a></span>
+            </div>
         </div>
     </header>
-    
-    <!--main Body-->
-    <div class= 'container'>
-        <div class="container_content">
-        <div class="container_content_inner">
-        <div class="title">
-          <h1>Jay</h1>
-        </div>
-        <div class="bio">
-            <p> Happiness starts with<br>being impressed by small things<br>
-            </p>
-        </div>
-        </div>
-        </div>
-         <div class="container_outer_img">
-         <div class="img-inner">
-         <img src='./assets/images/tree.JPG'  alt="" class="container_img"/>
-               </div>
-             </div>
-          </div>
-        <div class="overlay"></div>
+    <script>
+        let menu = document.querySelector('.menu')
+        menu.addEventListener('click', (e) => {
+          document.querySelector('ul').classList.toggle('active');
+        })
+      </script>
+    <script src="index.js"></script>
 
 </body>
 </html>
