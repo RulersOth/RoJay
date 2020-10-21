@@ -88,7 +88,7 @@ ul li a {
 
   .container_m {
     display: flex;
-    height: 60vh;
+    height: 50vh;
     padding: 0 20px;
   }
 
@@ -121,12 +121,18 @@ ul li a {
   .container_m .info_m .more_m {
     display: block;
     position: absolute;
-    top: 75%;
-    left: 60%;
+    top: 68%;
+    left: 70%;
     border: 1px solid #ffdd43;
     background-color: var(--black-color);
     color: #ffdd43;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .container_m .info_m .more_m:hover {
+    background: #ffdd43;
+    color: var(--white-color);
+    font-weight: bold;
   }
 }
 
